@@ -1,6 +1,5 @@
 import cpp
 
-from Function f
-where f.getName() = "ntohs" or f.getName() = "ntohl" or f.getName() = "ntohll"
-select f, "a function named noths"
-
+from Macro macro
+where macro.getName() in ["ntohs", "ntohl", "ntohll"]
+select macro
